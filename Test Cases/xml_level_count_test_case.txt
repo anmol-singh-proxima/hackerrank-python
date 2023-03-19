@@ -1,0 +1,54 @@
+26
+<feed xml:lang='en'>
+  <title>HackerRank</title>
+  <subtitle lang='en'>Programming challenges</subtitle>
+  <link rel='alternate' type='text/html' href='http://hackerrank.com/'/>
+  <updated>2013-12-25T12:00:00</updated>
+  <entry>
+  	<author gender='male'>Harsh 1</author>
+    	<question type='hard'>XML 1</question>
+    	<description type='text'>This is related to XML parsing 1</description>
+  </entry>
+  <entry>
+	<entry>
+		<entry>
+  		<author gender='male'>Harsh 3</author>
+    		<question type='medium'>XML 3</question>
+    		<description type='text'>This is related to XML parsing 3</description>
+  		</entry>
+  		<author gender='male'>Harsh 3</author>
+    		<question type='medium'>XML 3</question>
+    		<description type='text'>This is related to XML parsing 3</description>
+  	</entry>
+  	<author gender='male'>Harsh 2</author>
+    	<question type='medium'>XML 2</question>
+    	<description type='text'>This is related to XML parsing 2</description>
+  </entry>
+</feed>
+
+
+
+
+22
+<feed xml:lang='en'>
+  <title>HackerRank</title>
+  <subtitle lang='en'>Programming challenges</subtitle>
+  <link rel='alternate' type='text/html' href='http://hackerrank.com/'/>
+  <updated>2013-12-25T12:00:00</updated>
+  <entry>
+  	<author gender='male'>Harsh</author>
+    <question type='hard'>XML 1</question>
+    <description type='text'>This is related to XML parsing
+    	<category>Programming</category>
+    </description>
+  </entry>
+  <entry>
+  	<author gender='male'>Harsh</author>
+    	<question type='medium'>XML 2</question>
+    	<description type='text'>This is related to XML parsing
+		<description type='text'>This is related to XML parsing
+    			<category>Programming</category>
+    		</description>
+	</description>
+  </entry>
+</feed>
