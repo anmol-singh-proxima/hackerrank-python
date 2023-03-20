@@ -1,6 +1,5 @@
 
-String Functions:
-
+==== String Functions ====
 
 str.isalnum()
 str.isalpha()
@@ -8,20 +7,20 @@ str.isdigit()
 str.islower()
 str.isupper()
 
-
 srt.ljust(width, "-")
 str.cjust(width, "-")
 str.rjust(width, "-")
 
 
 
-List Functions:
+==== List Functions ====
 
 
 
 
 
-Set Function:
+==== Set Functions ====
+
 s = set()
 s.add([element])
 s.remove([element])
@@ -58,4 +57,19 @@ Difference Update
 Symmetric Difference Update
 - .symmetric_difference_update() or ^=
 - Update the set by only keeping the elements found in either set, but not in both.
+
+
+
+==== Complex Numbers ====
+
+complex(arg) - it will create a complex number from the given arg
+arg can be in the form of complex number "1+2j" or polar cordinates (1.0, 0.0)
+
+complex_number.real = it will give real part
+complex_number.imag = it will give imaginery part
+
+cmath.phase(complex_number) - it will give phase angle of a complex number
+arg(complex_number) - it will give modulus of a complex number
+
+
 
