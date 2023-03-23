@@ -163,3 +163,7 @@ Car(Price=100000, Mileage=30, Colour='Cyan', Class='Y')
 >>> print xyz.Class
 Y
 
+
+4. collections.OrderedDict
+An OrderedDict is a dictionary that remembers the order of the keys that were inserted first. If a new entry overwrites an existing entry, the original insertion position is left unchanged.
+
