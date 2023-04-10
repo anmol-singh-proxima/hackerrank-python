@@ -215,3 +215,12 @@ deque(['6', '9', '8', '7', '3'])
 >>> d.rotate(3)
 >>> print d
 deque(['8', '7', '3', '6', '9'])
+
+
+
+
+==== Calendar ====
+
+The calendar module allows you to output calendars and provides additional useful functions for them.
+class calendar.TextCalendar([firstweekday]) - This class can be used to generate plain text calendars.
+
