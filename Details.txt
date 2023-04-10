@@ -224,3 +224,16 @@ deque(['8', '7', '3', '6', '9'])
 The calendar module allows you to output calendars and provides additional useful functions for them.
 class calendar.TextCalendar([firstweekday]) - This class can be used to generate plain text calendars.
 
+
+
+==== Exception Handling ====
+
+try:
+    statement
+except:
+    statement
+
+
+
+==== Classes ====
+
