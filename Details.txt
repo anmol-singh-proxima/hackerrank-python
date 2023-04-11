@@ -237,3 +237,27 @@ except:
 
 ==== Classes ====
 
+
+Operator Overloading
+__add__
+__sub__
+__mul__
+__div__
+
+
+
+==== BuiltIns ====
+
+zip([iterables])
+any([iterable])
+all([iterable])
+
+
+==== Functionals ====
+
+map()
+lambda function
+filter()
+reduce()
+
+
