@@ -261,3 +261,18 @@ filter()
 reduce()
 
 
+==== Regex ====
+
+import re
+
+re.match(pattern, string)
+re.compile(pattern)
+re.split(pattern, string)
+
+var = re.match(pattern, string)
+var.group(re.search[...])
+var.groups(re.search[...])
+var.groupdict()
+
+re.findall()
+re.finditer()
