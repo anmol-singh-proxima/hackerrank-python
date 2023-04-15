@@ -56,7 +56,7 @@ if __name__ == "__main__":
         sum_sq = 0
         for i in range(k):
             sum_sq = sum_sq + pow(item[i], 2)
-        mod = sum_sq%m
+        mod = sum_sq % m
         if mod > s:
             s = mod
 

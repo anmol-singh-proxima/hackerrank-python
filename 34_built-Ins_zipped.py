@@ -43,4 +43,3 @@ for _ in range(x):
 marks_zip = list(zip(*marks))
 for i in range(n):
     print(sum(marks_zip[i])/x)
-    

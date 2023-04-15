@@ -7,6 +7,7 @@
 
 import re
 
+
 def my_code():
     pattern = '#[0-9abcdef]{3,6}'
     braces_flag = False

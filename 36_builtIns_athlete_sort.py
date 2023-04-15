@@ -35,6 +35,7 @@ The details are sorted based on the second attribute, since K is zero-indexed.
 
 """
 
+
 def my_code():
     n, m = map(int, input().split())
     arr = []

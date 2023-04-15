@@ -27,4 +27,5 @@ There is no penalty for solutions that are correct but have more than 3 lines.
 """
 
 _, num_list = int(input()), input().split()
-print(all([int(i)>0 for i in num_list]) and any([i == "".join(list(reversed(i))) for i in num_list]))
+print(all([int(i) > 0 for i in num_list]) and any(
+    [i == "".join(list(reversed(i))) for i in num_list]))

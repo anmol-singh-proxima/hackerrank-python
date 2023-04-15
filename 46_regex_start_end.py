@@ -25,10 +25,12 @@ Sample Output:
 
 import re
 
+
 def my_code():
     s, k = input(), input()
     m = re.finditer(r'(?=('+k+'))', s)
-    print("\n".join(map(str, [(i.start(), i.start()+len(k)-1) for i in m])) or (-1, -1))
+    print(
+        "\n".join(map(str, [(i.start(), i.start()+len(k)-1) for i in m])) or (-1, -1))
 
 
 def other_code():
@@ -37,7 +39,8 @@ def other_code():
 
     pattern = re.compile(substring)
     match = pattern.search(string)
-    if not match: print('(-1, -1)')
+    if not match:
+        print('(-1, -1)')
     while match:
         print('({0}, {1})'.format(match.start(), match.end() - 1))
         match = pattern.search(string, match.start() + 1)

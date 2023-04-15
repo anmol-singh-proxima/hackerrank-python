@@ -16,7 +16,7 @@ def second_max_num_in_list(list):
     list.sort(reverse=True)
     max = list[0]
     sec_max = -1
-    for i in range(1,n):
+    for i in range(1, n):
         if list[i] < max:
             sec_max = list[i]
             break

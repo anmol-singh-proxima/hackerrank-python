@@ -36,6 +36,7 @@ eeeee is located between consonant t and t.
 import re
 vowels = 'aeiou'
 consonants = 'qwrtypsdfghjklzxcvbnm'
-pattern = r'(?<=[' + consonants + '])([' + vowels + ']{2,})(?=[' + consonants +'])'
+pattern = r'(?<=[' + consonants + '])([' + vowels + \
+    ']{2,})(?=[' + consonants + '])'
 ans = re.findall(pattern, input(), flags=re.I)
 print("\n".join(ans or ['-1']))

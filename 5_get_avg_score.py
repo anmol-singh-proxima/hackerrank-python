@@ -27,7 +27,7 @@ if __name__ == '__main__':
         scores = list(map(float, line))
         student_marks[name] = scores
     query_name = input()
-    
+
     for name in student_marks:
         if name == query_name:
             m = len(student_marks[name])
@@ -38,5 +38,3 @@ if __name__ == '__main__':
             avg = sum/m
             print("%.2f" % avg)
         # print(name, student_marks[i])
-
-

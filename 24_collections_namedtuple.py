@@ -45,6 +45,7 @@ TESTCASE 02
 
 from collections import namedtuple
 
+
 def four_lines_code():
     n = int(input())
     Student = namedtuple('Student', input().split())

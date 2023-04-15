@@ -28,7 +28,7 @@ Sample Output:
 def design_door_mat(m, n):
     string = "WELCOME"
     a = 1
-    
+
     # Loop for printing first half
     for i in range(m//2):
         str = ""
@@ -39,7 +39,7 @@ def design_door_mat(m, n):
 
     print(string.center(n, "-"))
     a = a - 2
-    
+
     # Loop for printing second half
     for i in range(m//2):
         str = ""
@@ -47,7 +47,7 @@ def design_door_mat(m, n):
             str = str + ".|."
         print(str.center(n, "-"))
         a = a - 2
-           
+
 
 if __name__ == '__main__':
     m, n = list(input().split())

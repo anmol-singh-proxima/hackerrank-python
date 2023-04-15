@@ -12,6 +12,7 @@ hACKERrANK.COM PRESENTS "pYTHONIST 2".
 
 """
 
+
 def swap_case(s):
     lst = []
     for i in s:
@@ -23,6 +24,7 @@ def swap_case(s):
             lst.append(i)
     s = ''.join(lst)
     return s
+
 
 if __name__ == '__main__':
     s = input()

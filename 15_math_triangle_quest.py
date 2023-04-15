@@ -31,7 +31,7 @@ Sample Output:
 """
 
 
-for i in range(1,int(input())+1):
+for i in range(1, int(input())+1):
     # print(*range(1,i+1), *range(i-1, 0, -1))
     # print(''.join(str(x) for x in range(1,i)) + ''.join(str(x) for x in range(i,0,-1)))
     # [print(x, end="") for x in range(1,i)].append([print(x, end="") for x in range(i,0,-1)].append(print()))

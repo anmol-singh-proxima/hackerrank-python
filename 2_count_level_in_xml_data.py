@@ -25,7 +25,7 @@ def count_level(elem, level):
     flag = False
     for i in range(len(elem)):
         # print(len(elem[i]), elem[i].text)
-        if len(elem[i])>0:
+        if len(elem[i]) > 0:
             lvl = count_level(elem[i], level)
             if lvl > new_level:
                 new_level = lvl
@@ -49,7 +49,7 @@ if __name__ == '__main__':
     n = int(input())
     xml = ""
     for i in range(n):
-        xml =  xml + input() + "\n"
+        xml = xml + input() + "\n"
     tree = etree.ElementTree(etree.fromstring(xml))
     depth(tree.getroot(), -1)
     print(maxdepth)

@@ -25,7 +25,10 @@ ginortS1324
 
 def my_code():
     string = sorted(input())
-    lower = ""; upper = ""; odd = ""; even = ""
+    lower = ""
+    upper = ""
+    odd = ""
+    even = ""
     for i in string:
         if i.islower():
             lower = lower + i
@@ -37,13 +40,18 @@ def my_code():
             odd = odd + i
     print(lower+upper+odd+even)
 
+
 def short_code():
-    print(*sorted(input(), key=lambda c: (c.isdigit() - c.islower(), c in '02468', c)), sep='')
+    print(*sorted(input(), key=lambda c: (c.isdigit() -
+          c.islower(), c in '02468', c)), sep='')
+
 
 def short_code_described():
-    sorted_tuple_list = sorted([(c.isdigit() - c.islower(), c in '02468', c) for c in input()])
+    sorted_tuple_list = sorted(
+        [(c.isdigit() - c.islower(), c in '02468', c) for c in input()])
     sorted_list = [item[2] for item in sorted_tuple_list]
     print("".join(sorted_list))
+
 
 if __name__ == "__main__":
     my_code()

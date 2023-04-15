@@ -24,7 +24,7 @@ def count_attrib(node, count):
     for i in range(len(node)):
         # print("node attrib:", node[i].attrib)
         count = count + len(node[i].attrib)
-        if len(node[i])>0:
+        if len(node[i]) > 0:
             count = count_attrib(node[i], count)
     return count
 
@@ -35,6 +35,7 @@ def get_attr_number(node):
     # print("count:", count)
     count = count_attrib(node, count)
     return count
+
 
 if __name__ == '__main__':
     sys.stdin.readline()

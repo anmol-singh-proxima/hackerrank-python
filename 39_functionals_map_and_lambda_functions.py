@@ -17,7 +17,9 @@ Sample Output:
 
 """
 
-cube = lambda x: x**3
+
+def cube(x): return x**3
+
 
 def fibonacci1(n):
     fib_num = [0, 1]
@@ -25,11 +27,13 @@ def fibonacci1(n):
         fib_num.append(fib_num[i-1]+fib_num[i-2])
     return fib_num[0:n]
 
+
 def fibonacci2(n):
     a, b, c = 0, 1, 1
     for _ in range(n):
         yield a
         a, b = b, a + b
+
 
 if __name__ == '__main__':
     n = int(input())
