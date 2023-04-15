@@ -276,3 +276,12 @@ var.groupdict()
 
 re.findall()
 re.finditer()
+
+m = re.search()
+m.start()
+m.end()
+
+Terms:
+Overlapping search
+positive and negative Lookbehind search
+
