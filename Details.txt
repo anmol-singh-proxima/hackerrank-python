@@ -285,3 +285,13 @@ Terms:
 Overlapping search
 positive and negative Lookbehind search
 
+
+
+==== HTML.PARSER ====
+
+
+from html.parser import HTMLParser
+
+handle_starttag(tag, attrs)
+handle_endtag(tag)
+handle_startendtag(tag, attrs)
