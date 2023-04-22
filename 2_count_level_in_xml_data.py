@@ -24,25 +24,27 @@ def count_level(elem, level):
     new_level = 0
     flag = False
     for i in range(len(elem)):
-        # print(len(elem[i]), elem[i].text)
         if len(elem[i]) > 0:
             lvl = count_level(elem[i], level)
             if lvl > new_level:
                 new_level = lvl
-            # print("new_level:", new_level)
     if new_level > level:
         level = new_level
-    # print("level:", level)
     return level
 
 
 def depth(elem, level):
     global maxdepth
-    # your code goes here
     if len(elem) > 0:
         maxdepth = count_level(elem, 0)
     else:
         maxdepth = 0
+
+
+def my_short_code(elem, level):
+    global maxdepth
+    [depth(child, level+1) for child in elem]
+    maxdepth = level + 1 if maxdepth <= level else maxdepth
 
 
 if __name__ == '__main__':

@@ -20,9 +20,7 @@ import xml.etree.ElementTree as etree
 
 
 def count_attrib(node, count):
-    # print("==== count:{} ====".format(count))
     for i in range(len(node)):
-        # print("node attrib:", node[i].attrib)
         count = count + len(node[i].attrib)
         if len(node[i]) > 0:
             count = count_attrib(node[i], count)
@@ -30,11 +28,13 @@ def count_attrib(node, count):
 
 
 def get_attr_number(node):
-    # your code goes here
     count = len(node.attrib)
-    # print("count:", count)
     count = count_attrib(node, count)
     return count
+
+
+def short_code(root):
+    return len(root.attrib) + sum([get_attr_number(child) for child in root])
 
 
 if __name__ == '__main__':
