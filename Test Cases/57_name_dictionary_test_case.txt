@@ -1,0 +1,24 @@
+==== Input ====
+10
+Jake Jake 42 M
+Jake Kevin 57 M
+Jake Michael 91 M
+Kevin Jake 2 M
+Kevin Kevin 44 M
+Kevin Michael 100 M
+Michael Jake 4 M
+Michael Kevin 36 M
+Michael Michael 15 M
+Micheal Micheal 6 M
+
+==== Output ====
+Mr. Kevin Jake
+Mr. Michael Jake
+Mr. Micheal Micheal
+Mr. Michael Michael
+Mr. Michael Kevin
+Mr. Jake Jake
+Mr. Kevin Kevin
+Mr. Jake Kevin
+Mr. Jake Michael
+Mr. Kevin Michael
