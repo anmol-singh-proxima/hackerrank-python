@@ -1,20 +1,17 @@
 """
 
+Task:
 You are given a valid XML document, and you have to print the maximum level of nesting in it. Take the depth of the root as 0.
 
-Input Format
-
+Input Format:
 The first line contains N, the number of lines in the XML document.
 The next N lines follow containing the XML document.
 
-Output Format
-
+Output Format:
 Output a single line, the integer value of the maximum level of nesting in the XML document.
 
 """
 
-
-import sys
 import xml.etree.ElementTree as etree
 maxdepth = 0
 
