@@ -296,3 +296,107 @@ handle_starttag(tag, attrs)
 handle_endtag(tag)
 handle_startendtag(tag, attrs)
 
+
+
+==== Numpy ====
+
+1. Import numpy
+import numpy as np
+
+2. Create a numpy array
+numpy_arr = np.array([...])
+
+3. To reverse a numpy array
+numpy_rev = np.flip(numpy_arr)
+numpy_rev = numpy_arr[::-1]
+
+4. Shape and Reshape
+numpy_arr.shape  # For getting the shape of numpy array
+numpy_arr.shape = (a, b)  # Seting the shape of numpy array to (a, b)
+np.reshape(numpy_arr, (a,b))  # Returning a new array of updated shape (a, b)
+
+5. Transpose and Flatten
+trans_arr = np.transpose(numpy_arr)  # Transpose the numpy array and returns a new array
+flat_arr = numpy_arr.flatten()  # Flatten the numpy array and returns a new array
+
+6. Concatenate
+concatenate_arr = np.concatenate((numpy_ar1, numpy_arr2), axis = 0)
+
+7. Zeros and Ones
+numpy_zero_arr = np.zeros(shape)  # shape is some tuple
+numpy_zero_arr = np.ones(shape)  # shape is some tuple
+
+8. Eye and Identity
+identity = np.identity(3, dtype=numpy.int64)  # To get the main diagonal as 1s and rest 0s
+eye = np.eye(8, 9, k = -2)  # To get the kth diagonal as 1s and rest 0s
+
+
+9. Array Mathematics
+
+a = np.array([1,2,3,4], float)
+b = np.array([5,6,7,8], float)
+
+np.add(a, b) # Similar to a + b
+np.subtract(a, b) # Similar to a - b
+np.multiply(a, b) # Similar to a * b
+np.divide(a, b) # Similar to a / b
+np.floor_divide(a, b) # Similar to a // b
+np.mod(a, b) # Similar to a % b
+np.power(a, b) # Similar to a**b
+
+
+10. Floor, Ceil and Rint
+numpy_arr = np.array([1.1, 2.2, 3.3, 4.4, 5.5, 6.6, 7.7, 8.8, 9.9])
+floor = np.floor(numpy_arr)
+ceil = np.ceil(numpy_arr)
+rint = np.rint(numpy_arr)
+
+
+11. Sum and Prod
+
+numpy_arr = np.array([ [1, 2], [3, 4], [5,6] ])
+
+# Print statements for different ways of Sum and Prod
+print(np.sum(numpy_arr, axis = 0))
+print(np.sum(numpy_arr, axis = 1))
+print(np.sum(numpy_arr, axis = None))
+print(np.sum(numpy_arr))
+print(np.prod(numpy_arr, axis = 0))
+print(np.prod(numpy_arr, axis = 1))
+print(np.prod(numpy_arr, axis = None))
+print(np.prod(numpy_arr))
+
+# Output of above print statements sequentially
+[ 9 12]
+[ 3  7 11]
+21
+21
+[15 48]
+[ 2 12 30]
+720
+720
+
+
+12. Min and Max
+numpy_arr = np.array([[2, 5], [3, 7], [1, 3], [4, 0]])
+
+# Print statements for different ways of Min and Max
+print(np.min(numpy_arr, axis = 0))
+print(np.min(numpy_arr, axis = 1))
+print(np.min(numpy_arr, axis = None))
+print(np.min(numpy_arr))
+print(np.max(numpy_arr, axis = 0))
+print(np.max(numpy_arr, axis = 1))
+print(np.max(numpy_arr, axis = None))
+print(np.max(numpy_arr))
+
+# Output of above print statements sequentially
+[1 0]
+[2 3 1 0]
+0
+0
+[4 7]
+[5 7 3 4]
+7
+7
+
