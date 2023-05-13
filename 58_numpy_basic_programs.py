@@ -63,3 +63,40 @@ print(np.prod(np.sum(arr, axis=0)))
 n, m = map(int, input().split())
 arr = np.array([list(map(int, input().split())) for _ in range(n)])
 print(np.max(np.min(arr, axis=1)))
+
+
+# Mean, Var, and Std
+n, m = map(int, input().split())
+arr = np.array([list(map(int, input().split())) for _ in range(n)])
+print(np.mean(arr, axis=1))
+print(np.var(arr, axis=0))
+print(round(np.std(arr), 11))
+
+
+# Dot and Cross
+n = int(input())
+a, b = [np.array([input().split() for _ in range(n)], int) for _ in range(2)]
+b = np.transpose(b)
+print(np.array([[np.dot(a[i], b[j]) for j in range(n)] for i in range(n)]))
+# OR
+n = int(input())
+a, b = [np.array([input().split() for _ in range(n)], int) for _ in range(2)]
+print(np.dot(a, b))
+
+
+# Inner and Outer
+a, b = [np.array(input().split(), int) for _ in range(2)]
+print(np.inner(a, b))
+print(np.outer(a, b))
+
+
+# Polynomials
+p = list(map(float, input().split()))
+x = int(input())
+print(np.polyval(p, x))
+
+
+# Linear Algebra
+n = int(input())
+a = np.array([list(map(float, input().split())) for _ in range(n)])
+print(round(np.linalg.det(a), 2))
