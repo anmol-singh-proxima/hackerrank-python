@@ -34,36 +34,18 @@ Sample Output:
 
 """
 
-# Enter your code here. Read input from STDIN. Print output to STDOUT
-
-if __name__ == "__main__":
-    m = int(input())
-    set1 = set(map(int, input().split()))
-    # print(set1)
-    # print(type(set1))
-    n = int(input())
-    # print(n)
-    for i in range(n):
-        command = input().split()
-        # print(command)
-        if command[0] == "pop":
-            # print("pop element")
-            set1.pop()
-        elif command[0] == "remove":
-            ele = int(command[1])
-            try:
-                set1.remove(ele)
-            except:
-                print("", end="")
-            # print("remove element {}".format(ele))
+n = int(input())
+s = set(map(int, input().split()))
+n = int(input())
+for i in range(n):
+    command = input().split()
+    if command[0] == "pop":
+        s.pop()
+    else:
+        ele = int(command[1])
+        if command[0] == "remove":
+            s.remove(ele)
         elif command[0] == "discard":
-            ele = int(command[1])
-            set1.discard(ele)
-            # print("discard element {}".format(ele))
-        else:
-            print("Wrong Command!!")
-        # print(set1)
-    sum = 0
-    for i in set1:
-        sum = sum + i
-    print(sum)
+            s.discard(ele)
+sum = sum(list(s))
+print(sum)

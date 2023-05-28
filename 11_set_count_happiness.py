@@ -28,18 +28,18 @@ Sample Output:
 """
 
 
-def long_version():
+def my_code():
     m, n = list(map(int, input().split()))
     arr = set(input().split())
-    a_set = set(input().split())
-    b_set = set(input().split())
-    happiness = 0
+    a = set(input().split())
+    b = set(input().split())
+    happy = 0
     for i in arr:
-        if i in a_set:
-            happiness = happiness+1
-        if i in b_set:
-            happiness = happiness-1
-    print(happiness)
+        happy = happy+1 if i in a else happy
+        happy = happy-1 if i in b else happy
+    print(len(a))
+    print(len(b))
+    print(happy)
 
 
 def short_version():
@@ -50,5 +50,25 @@ def short_version():
     print(sum([(i in A) - (i in B) for i in array]))
 
 
+def code_for_file():
+    f = open("./Test_Cases/11_count_happiness_test_case_2.txt", "r")
+    m, n = list(map(int, f.readline().split()))
+    print(m, n)
+    arr = set(f.readline().split())
+    a = set(f.readline().split())
+    b = set(f.readline().split())
+    happy = 0
+    # for i in arr:
+    #     happy = happy+1 if i in a else happy
+    #     happy = happy-1 if i in b else happy
+    # happiness = sum([1 if i in a else (-1 if i in b else 0) for i in arr])
+    happiness = sum([(i in a) - (i in b) for i in arr])
+    print(len(arr))
+    print(len(a))
+    print(len(b))
+    print(happiness)
+
+
 if __name__ == "__main__":
-    short_version()
+    # my_code()
+    code_for_file()
